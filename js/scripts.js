@@ -88,10 +88,10 @@ $(function() {
 
     if (ux_interest === "yes") {
       $("#ux_interest").hide()
-      $("#ux_yes").show();
+      $("#ux_yes").fadeIn();
     } else {
       $("#ux_interest").hide()
-      $("#ux_no").show()
+      $("#ux_no").fadeIn()
     }
 
     event.preventDefault();
