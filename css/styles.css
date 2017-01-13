@@ -1,0 +1,70 @@
+/**********GENERAL**********/
+
+body {
+  font-family: 'Muli', sans-serif;
+  width: 80%;
+  margin: 0 auto;
+}
+
+a {
+  color: #E86850;
+}
+
+a:hover {
+  color: #587058;
+  text-decoration: none;
+}
+
+/**********HEADER**********/
+
+header {
+  text-align: center;
+}
+
+header h3 {
+  text-align: left;
+  line-height: 1.2em;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header button {
+  text-align: center;
+}
+
+.jumbotron {
+  font-size: 4em;
+  padding: 75px;
+  border-radius: 5px;
+  background-image: url(../img/comp_background.jpg);
+  color: white;
+}
+
+.btn-primary {
+  background-color: #E86850;
+  border-radius: 2px;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.btn-primary:hover {
+  background-color: #587058;
+}
+
+.btn-primary:focus {
+  outline: none;
+}
+
+#get_started {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/**********FOOTER**********/
+
+footer {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #587058;
+  text-align: center;
+}
