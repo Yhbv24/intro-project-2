@@ -7,12 +7,18 @@ body {
 }
 
 a {
+  text-decoration: none;
   color: #E86850;
 }
 
 a:hover {
-  color: #587058;
   text-decoration: none;
+  color: #587058;
+}
+
+#get_started a {
+  text-decoration: none;
+  color: white;
 }
 
 /**********HEADER**********/
@@ -33,6 +39,7 @@ header button {
 }
 
 .jumbotron {
+  text-align: left;
   font-size: 4em;
   padding: 75px;
   border-radius: 5px;
