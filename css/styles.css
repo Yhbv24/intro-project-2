@@ -42,6 +42,10 @@ a:focus {
   display: none;
 }
 
+#ux_interest {
+  display: none;
+}
+
 #after_name_input_text {
   display: none;
 }
@@ -70,11 +74,23 @@ a:focus {
   display: none;
 }
 
+#ux_yes {
+  display: none;
+}
+
+#ux_no {
+  display: none;
+}
+
 #name_age_button {
   text-align: center;
 }
 
 #interests_button {
+  text-align: center;
+}
+
+#ux_button {
   text-align: center;
 }
 
