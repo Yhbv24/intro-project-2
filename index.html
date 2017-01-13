@@ -17,14 +17,14 @@
 
           <div id="index_content"> <!-- This is the "homepage" content, which will change when the user continues forward -->
             <h3>We're glad you chose Epicodus to learn how to program. While we offer numerous tracks, the languages themselves aren't as important as the <em>concepts</em> behind them. We hope that you focus on how to <em>learn</em>, rather than the languages themselves. Please have a look <a href="https://www.epicodus.com/blog/what-programming-language-should-i-learn" target="_blank">here</a> to read more!</h3><br>
-            <h3>The goal of this site is to ask you a few questions so that you can perhaps get a better idea of which language(s) you'd like to learn. To get started, please click the button below. Before doing so, you may want to consult <a href="https://www.epicodus.com/courses-overview/" target="_blank">this</a> link, which goes over the different tracks.</h3><br>
+            <h3>The goal of this site is to ask you a few questions so that you can perhaps get a better idea of which language(s) you'd like to learn. To get started, please click the button below. Before doing so, you may want to consult <a href="https://www.epicodus.com/courses-overview/" target="_blank">this</a> link, which goes over the different tracks.</h3>
             <button class="btn-primary" type="button" id="get_started">Get Started!</button>
           </div>
         </header>
       </div>
     </div>
 
-    <div class="row"> <!-- This content will show after "Submit" button is clicked -->
+    <div class="row"> <!-- This content will show after inital "Submit" button is clicked -->
       <div class="col-sm-12">
         <div id="quiz_intro">
           <h3>OK! Glad you decided to move forward. As mentioned before, the goal of this survey is to give you a better idea of which track you should take. Please answer the following questions below, and hit the "submit" button to see what the recommended course is. Also, if you need to go back to the home page, please click <a href="index.html">here</a>.</h3><br>
@@ -36,6 +36,86 @@
       <div class="col-sm-12">
         <div id="after_name_input_text">
           <h3>Thanks! Now, we're going to ask some questions to get a better idea of what you like.</h3><br>
+        </div>
+      </div>
+    </div>
+
+    <form id="name_age"> <!-- This is the initial form which will determine whether the path continues -->
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="name">What is your name?</label>
+            <input type="text" name="name" class="form-control" id="user_name"><br>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="experience">How much experience coding do you have?</label><br>
+            <select name="experience" id="experience">
+              <option value="none">None</option>
+              <option value="some">A little</option>
+              <option value="lots">A lot</option>
+              <option value="veteran">I'm a veteran!</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12" id="name_age_button">
+          <button class="btn-primary" type="submit" name="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="row"> <!-- This content will show if a user selects "some" or "no" programming experience -->
+      <div class="col-sm-12">
+        <div id="some">
+          <h3>Thanks! So you're pretty new to programming, but want to learn more. Epicodus will be perfect for you! Now, we're going to ask some questions to get a better idea of what you like.</h3><br>
+        </div>
+      </div>
+    </div>
+
+    <form id="interests">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="form-group">
+            <label for="interests">Are you interested in front-end or back-end development, or both?</label>
+            <input type="radio" name="interests" value="front"> Front-End<br>
+            <input type="radio" name="interests" value="back"> Back-End<br>
+            <input type="radio" name="interests" value="both"> Both<br>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="form-group">
+            <label for="app_or_web">Are you more interested in web development, or application development?</label>
+            <input type="radio" name="app_or_web" value="web"> Web<br>
+            <input type="radio" name="app_or_web" value="app"> Application<br>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="form-group">
+            <label for "mobile_or_business">Do you prefer creating programs for large-scale business operations, or do you prefer more flexibility?</label>
+            <input type="radio" name="mobile_or_business" value="large_scale"> Large-Scale<br>
+            <input type="radio" name="mobile_or_business" value="flexible"> Flexible<br>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12" id="interests_button">
+          <button class="btn-primary" type="submit" name="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="row"> <!-- This content will show after user inputs name -->
+      <div class="col-sm-12">
+        <div id="veteran">
+          <h3>You're already a veteran? While Epicodus may help solidify programming ideas, perhaps you should look into find a job as a developer!</h3><br>
         </div>
       </div>
     </div>
@@ -55,58 +135,6 @@
         </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-sm-4">
-        <!-- Placeholder div to center first question -->
-      </div>
-
-      <div class="col-sm-4">
-        <form id="name_age">
-          <div class="form-group">
-            <label for="name">What is your name?</label>
-            <input type="text" name="name" class="form-control" id="user_name"><br>
-          </div>
-
-          <button class="btn-primary" type="submit" name="submit">Submit</button>
-        </form>
-      </div>
-
-      <div class="col-sm-4">
-        <!-- Placeholder div to center first question -->
-      </div>
-    </div>
-
-    <form id="interests">
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="form-group">
-            <label>Are you interested in front-end or back-end development, or both?</label>
-            <input type="radio" name="interests" value="front"> Front-End<br>
-            <input type="radio" name="interests" value="back"> Back-End<br>
-            <input type="radio" name="interests" value="both"> Both<br>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="form-group">
-            <label>Are you more interested in web development, or application development?</label>
-            <input type="radio" name="app_or_web" value="web"> Web<br>
-            <input type="radio" name="app_or_web" value="app"> Application<br>
-          </div>
-
-          <button class="btn-primary" type="submit" name="submit">Submit</button>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="form-group">
-            <label>Do you prefer creating programs for large-scale business operations, or do you prefer more flexibility?</label>
-            <input type="radio" name="mobile_or_business" value="large_scale"> Large-Scale<br>
-            <input type="radio" name="mobile_or_business" value="flexible"> Flexible<br>
-          </div>
-        </div>
-      </div>
-    </form>
 
     <footer>
       <h6>© Ash Laidlaw, 2017 | <a href="index.html">Home</a></h6>

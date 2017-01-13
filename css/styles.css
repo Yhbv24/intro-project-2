@@ -54,6 +54,22 @@ a:focus {
   display: none;
 }
 
+#veteran {
+  display: none;
+}
+
+#some {
+  display: none;
+}
+
+#name_age_button {
+  text-align: center;
+}
+
+#interests_button {
+  text-align: center;
+}
+
 /**********HEADER**********/
 
 header {
