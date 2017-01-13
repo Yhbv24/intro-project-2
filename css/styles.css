@@ -16,6 +16,11 @@ a:hover {
   color: #587058;
 }
 
+a:focus {
+  text-decoration: none;
+  color: #587058;
+}
+
 #get_started a {
   text-decoration: none;
   color: white;
@@ -34,6 +39,18 @@ a:hover {
 }
 
 #interests {
+  display: none;
+}
+
+#after_name_input_text {
+  display: none;
+}
+
+#front_end_recommend {
+  display: none;
+}
+
+#java_android_recommend {
   display: none;
 }
 

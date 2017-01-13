@@ -13,8 +13,9 @@ $(function() {
       alert("Please enter your name.")
     } else {
       $("h1").text("Welcome, " + name + "!");
-      $("h3").text("Thanks! Now, we're going to ask some questions to get a better idea of what you like.")
       $("#name_age").hide()
+      $("#after_name_input_text").show()
+      $("#quiz_intro").hide()
       $("#interests").show()
     }
 
@@ -28,12 +29,14 @@ $(function() {
 
     if (!interests || !app_or_web || !mobile_or_business) {
       alert("Please make sure to fill out all of the answers.")
-    } else if (interests === "both" && app_or_web === "web" && mobile_or_business === "flexible") {
+    } else if ((interests === "both" || interests === "front") && app_or_web === "web" && mobile_or_business === "flexible") {
       $("#interests").hide()
-      $("h3").text("It sounds like you're interested in front-end web development. We recommend you check out our Design track!")
+      $("#after_name_input_text").hide()
+      $("#front_end_recommend").show()
     } else if (interests === "both" && app_or_web === "app" && mobile_or_business === "large_scale") {
       $("#interests").hide()
-      $("h3").text("It sounds like you're interested in business application development. We recommend our Java and Android track!")
+      $("#after_name_input_text").hide()
+      $("#java_android_recommend").show();
     } else if (interests === "both" && app_or_web === "app" && mobile_or_business === "flexible") {
        $("#interests").hide()
        $("h3").text("It sounds like you're interested in small-scale application development. We recommend either our Java and Android track, or our Ruby and Rails track!")
