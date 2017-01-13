@@ -33,20 +33,24 @@ a:hover {
   display: none;
 }
 
+#interests {
+  display: none;
+}
+
 /**********HEADER**********/
 
 header {
   text-align: center;
 }
 
-header h3 {
+h3 {
   text-align: left;
-  line-height: 1.2em;
+  line-height: 1.3em;
   width: 90%;
   margin: 0 auto;
 }
 
-header button {
+button {
   text-align: center;
 }
 
@@ -82,6 +86,7 @@ header button {
 /**********FOOTER**********/
 
 footer {
+  clear: both;
   margin-top: 30px;
   padding-top: 20px;
   border-top: 1px solid #587058;

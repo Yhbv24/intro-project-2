@@ -17,8 +17,7 @@ $(function() {
 
     $("h3").text("Thanks! Now, we're going to ask some questions to get a better idea of what you like.")
     $("#name_age").hide();
-    $("#questions").show();
-
+    $("#interests").show();
 
     event.preventDefault();
   });
