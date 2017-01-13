@@ -4,6 +4,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Muli:300|Nunito+Sans" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
     <title>Epicodus | Course Chooser</title>
   </head>
 
@@ -11,16 +13,48 @@
     <div class="row">
       <div class="col-sm-12">
         <header>
-          <h1 class="jumbotron">Welcome!</h1>
-          <h3>We're glad you chose Epicodus to learn how to program. While we offer numerous tracks, the languages themselves aren't as important as the <em>concepts</em> behind them. We hope that you focus on how to <em>learn</em>, rather than the languages themselves. Please have a look <a href="https://www.epicodus.com/blog/what-programming-language-should-i-learn">here</a> to read more!</h3><br>
-          <h3>The goal of this site is to ask you a few questions so that you can perhaps get a better idea of which language(s) you'd like to learn. To get started, please click the button below. Before doing so, you may want to consult <a href="https://www.epicodus.com/courses-overview/">this</a> link, which goes over the different tracks.</h3><br>
-          <button class="btn-primary" type="button" id="get_started"><a href="quiz.html">Get Started!</a></button>
+          <h1 class="jumbotron">Welcome!</h1> <!-- The jumbotron will update depending on user's name and location in the flow of the survey -->
+
+          <div id="index_content"> <!-- This is the "homepage" content, which will change when the user continues forward -->
+            <h3>We're glad you chose Epicodus to learn how to program. While we offer numerous tracks, the languages themselves aren't as important as the <em>concepts</em> behind them. We hope that you focus on how to <em>learn</em>, rather than the languages themselves. Please have a look <a href="https://www.epicodus.com/blog/what-programming-language-should-i-learn">here</a> to read more!</h3><br>
+            <h3>The goal of this site is to ask you a few questions so that you can perhaps get a better idea of which language(s) you'd like to learn. To get started, please click the button below. Before doing so, you may want to consult <a href="https://www.epicodus.com/courses-overview/">this</a> link, which goes over the different tracks.</h3><br>
+            <button class="btn-primary" type="button" id="get_started">Get Started!</button>
+          </div>
         </header>
       </div>
     </div>
 
+    <div class="row">
+      <div class="col-sm-12">
+        <div id="quiz_intro"> <!-- This content will show after "Submit" button is clicked -->
+          <h3>OK! Glad you decided to move forward. As mentioned before, the goal of this survey is to give you a better idea of which track you should take. Please answer the following questions below, and hit the "submit" button to see what the recommended course is. Also, if you need to go back to the home page, please click <a href="index.html">here</a>.</h3><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <!-- Placeholder div to center first question -->
+      </div>
+
+      <div class="col-sm-4">
+        <form id="name_age">
+          <div class="form-group">
+            <label for="name">What is your name?</label>
+            <input type="text" name="name" class="form-control" id="user_name"><br>
+          </div>
+
+          <button class="btn-primary" type="submit" name="submit">Submit</button>
+        </form>
+
+        <div class="col-sm-4">
+          <!-- Placeholder div to center first question -->
+        </div>
+      </div>
+    </div>
+
     <footer>
-      <h6>© Ash Laidlaw, 2017</h6>
+      <h6>© Ash Laidlaw, 2017 | <a href="index.html">Home</a></h6>
     </footer>
   </body>
 </html>

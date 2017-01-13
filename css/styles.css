@@ -21,6 +21,18 @@ a:hover {
   color: white;
 }
 
+#questions {
+  display: none;
+}
+
+#quiz_intro {
+  display: none;
+}
+
+#name_age {
+  display: none;
+}
+
 /**********HEADER**********/
 
 header {
