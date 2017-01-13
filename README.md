@@ -15,6 +15,8 @@ __In order to see the code and try out the survey, please follow this link to my
 
 * If you'd like to see the code, open the index.html in the text editor of your choice.
 
+* To see the site live, please click (https://yhbv24.github.io/political-quiz/intro-project-2/).
+
 ## Bugs and Issues
 
 __None that I have found yet.__
