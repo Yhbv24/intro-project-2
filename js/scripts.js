@@ -51,10 +51,21 @@ $(function() {
       $("#interests").hide()
       $("#after_name_input_text").hide()
       $("#java_android_recommend").show();
-    } else if (interests === "both" && app_or_web === "app" && mobile_or_business === "flexible") {
+    } else if (interests === "back" && app_or_web === "app" && mobile_or_business === "large_scale") {
       $("#some").hide()
       $("#interests").hide()
-      $("h3").text("It sounds like you're interested in small-scale application development. We recommend either our Java and Android track, or our Ruby and Rails track!")
+      $("#after_name_input_text").hide()
+      $("#c_net_recommend").show();
+    } else if (interests === "back" && app_or_web === "web" && mobile_or_business === "large_scale") {
+      $("#some").hide()
+      $("#interests").hide()
+      $("#after_name_input_text").hide()
+      $("#ruby_rails").show()
+    } else {
+      $("#some").hide()
+      $("#interests").hide()
+      $("#after_name_input_text").hide()
+      $("h3").text("Sorry, but I didn't program selections catered to your needs. Looks like I need to continue my studies!")
     }
 
     event.preventDefault();

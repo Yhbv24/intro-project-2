@@ -62,6 +62,14 @@ a:focus {
   display: none;
 }
 
+#c_net_recommend {
+  display: none;
+}
+
+#ruby_rails {
+  display: none;
+}
+
 #name_age_button {
   text-align: center;
 }
