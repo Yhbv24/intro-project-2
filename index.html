@@ -16,8 +16,8 @@
           <h1 class="jumbotron">Welcome!</h1> <!-- The jumbotron will update depending on user's name and location in the flow of the survey -->
 
           <div id="index_content"> <!-- This is the "homepage" content, which will change when the user continues forward -->
-            <h3>We're glad you chose Epicodus to learn how to program. While we offer numerous tracks, the languages themselves aren't as important as the <em>concepts</em> behind them. We hope that you focus on how to <em>learn</em>, rather than the languages themselves. Please have a look <a href="https://www.epicodus.com/blog/what-programming-language-should-i-learn">here</a> to read more!</h3><br>
-            <h3>The goal of this site is to ask you a few questions so that you can perhaps get a better idea of which language(s) you'd like to learn. To get started, please click the button below. Before doing so, you may want to consult <a href="https://www.epicodus.com/courses-overview/">this</a> link, which goes over the different tracks.</h3><br>
+            <h3>We're glad you chose Epicodus to learn how to program. While we offer numerous tracks, the languages themselves aren't as important as the <em>concepts</em> behind them. We hope that you focus on how to <em>learn</em>, rather than the languages themselves. Please have a look <a href="https://www.epicodus.com/blog/what-programming-language-should-i-learn" target="_blank">here</a> to read more!</h3><br>
+            <h3>The goal of this site is to ask you a few questions so that you can perhaps get a better idea of which language(s) you'd like to learn. To get started, please click the button below. Before doing so, you may want to consult <a href="https://www.epicodus.com/courses-overview/" target="_blank">this</a> link, which goes over the different tracks.</h3><br>
             <button class="btn-primary" type="button" id="get_started">Get Started!</button>
           </div>
         </header>
@@ -53,22 +53,22 @@
       </div>
     </div>
 
-    <div class="row">
-      <form id="interests">
+    <form id="interests">
+      <div class="row">
         <div class="col-sm-4">
           <div class="form-group">
-            <label>Do you prefer designing layouts, handling data, or both?</label>
-            <input type="radio" name="interests" value="design"> Design<br>
-            <input type="radio" name="interests" value="data"> Data<br>
+            <label>Are you interested in front-end or back-end development, or both?</label>
+            <input type="radio" name="interests" value="front"> Front-End<br>
+            <input type="radio" name="interests" value="back"> Back-End<br>
             <input type="radio" name="interests" value="both"> Both<br>
           </div>
         </div>
 
         <div class="col-sm-4">
           <div class="form-group">
-            <label>Do you prefer application development, or web development?</label>
+            <label>Are you more interested in web development, or application development?</label>
             <input type="radio" name="app_or_web" value="web"> Web<br>
-            <input type="radio" name="app_or_web" value="app"> Applications<br>
+            <input type="radio" name="app_or_web" value="app"> Application<br>
           </div>
 
           <button class="btn-primary" type="submit" name="submit">Submit</button>
@@ -76,14 +76,13 @@
 
         <div class="col-sm-4">
           <div class="form-group">
-            <label>Do you prefer application development, or web development?</label>
-            <input type="radio" name="app_or_web" value="web"> Web<br>
-            <input type="radio" name="app_or_web" value="app"> Applications<br>
+            <label>Do you prefer creating programs for large-scale business operations, or do you prefer more flexibility?</label>
+            <input type="radio" name="mobile_or_business" value="large_scale"> Large-Scale<br>
+            <input type="radio" name="mobile_or_business" value="flexible"> Flexible<br>
           </div>
         </div>
-      </form>
-    </div>
-  </div>
+      </div>
+    </form>
 
     <footer>
       <h6>© Ash Laidlaw, 2017 | <a href="index.html">Home</a></h6>
