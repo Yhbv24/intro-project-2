@@ -15,13 +15,20 @@ __In order to see the code and try out the survey, please follow this link to my
 
 * If you'd like to see the code, open the index.html in the text editor of your choice.
 
-* To see the site live, please click (https://yhbv24.github.io/political-quiz/intro-project-2/).
+* To see the site live, please click (https://yhbv24.github.io/intro-project-2/).
 
 ## Bugs and Issues
 
 __None that I have found yet.__
 
 __I don't have branching for all options, so you may not get a proper answer depending on the questions you answer.__
+
+## Updates
+
+__23 January, 2017__
+
+   * Update GH-Pages link so that it works
+   * Move event.preventDefault(); to the top of its function
 
 ## Licensing
 

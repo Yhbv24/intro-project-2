@@ -7,6 +7,8 @@ $(function() {
   });
 
   $("#name_age").submit(function(event) { // This is the button to initiate the survey section //
+    event.preventDefault();
+    
     var name = $("input#user_name").val();
     var experience = $("#experience").val();
 
@@ -30,8 +32,6 @@ $(function() {
       $("#quiz_intro").hide()
       $("#interests").fadeIn(500)
     }
-
-    event.preventDefault();
   });
 
   $("#interests").submit(function(event) { // This is the button to submit the survey's first section //
